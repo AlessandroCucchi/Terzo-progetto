@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tongue</title>
+    <link rel="stylesheet" href="/scss/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="content-wrapper" style="display: none">
+      <div class="header">
+        <img class="tongue-logo" src="assets/tongue-logo.png" alt="" />
+        <div class="title-wrapper">
+          <h1 class="title">TONGUE</h1>
+        </div>
+      </div>
+      <div class="subtitle-wrapper">
+        <p class="subtitle">Smart news for smart scrolls.</p>
+      </div>
+
+      <ul class="list" id="news-list"></ul>
+      <div class="load-more-wrapper">
+        <button class="btn-load-more" id="load-more">Load More</button>
+      </div>
+    </div>
+    <script src="lodash.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
