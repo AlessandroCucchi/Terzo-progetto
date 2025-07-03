@@ -5,7 +5,9 @@ const cors = require("cors");
 const axios = require("axios");
 const path = require("path");
 
-const url = process.env.API_BASE_URL;
+const url =
+  process.env.API_BASE_URL ||
+  "https://hacker-news.firebaseio.com/v0/newstories.json";
 
 const app = express();
 const port = process.env.PORT;
