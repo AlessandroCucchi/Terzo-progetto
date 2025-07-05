@@ -17,6 +17,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem;
   padding-bottom: 0;
   margin-top: 3%;
@@ -41,8 +42,15 @@ body {
       color: #1d1d1d;
       margin: 0;
       font-size: 5rem;
-      text-shadow: 5px 5px 1px rgba(217, 255, 0, 0.575);
+      text-shadow: 5px 5px 1px rgb(255, 255, 255);
     }
+  }
+
+  .about-us-img {
+    height: 85px; // ≈ 88p
+    aspect-ratio: 1;
+    margin: 0;
+    padding: 0;
   }
 }
 
