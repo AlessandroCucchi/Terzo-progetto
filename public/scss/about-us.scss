@@ -56,7 +56,7 @@ body {
   border: 2px solid black;
   border-radius: 10px;
   padding: 1rem;
-  background-color: #ff00956e;
+  background-color: rgba(111, 0, 255, 0.3764705882);
   .top {
     display: flex;
     justify-content: center;
@@ -67,8 +67,31 @@ body {
       text-align: center;
       margin-top: 2rem;
       font-size: 1.4rem;
-      color: #e74040;
+      color: #000000;
       text-shadow: 3px 3px 1px rgb(255, 255, 255);
+      background-color: #e74040;
+      border: 2px solid black;
+      border-radius: 6px;
+      width: 90%;
+    }
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .party-emoji1 {
+      font-size: 5rem;
+    }
+    .founders-img {
+      height: 300px;
+      object-fit: contain;
+    }
+    .party-emoji2 {
+      display: inline-block;
+      transform: scaleX(-1);
+      font-size: 5rem;
     }
   }
   .middle {
@@ -76,12 +99,7 @@ body {
     flex-direction: column;
     .desc1 {
     }
-    .founders-img {
-      height: 500px;
-      margin-top: -9rem;
-      margin-bottom: -5rem;
-      object-fit: contain;
-    }
+
     .desc-founders {
       display: flex;
       justify-content: center;
@@ -100,6 +118,9 @@ body {
     font-size: 1.4rem;
     justify-content: center;
     text-align: center;
-    text-shadow: 3px 3px 1px #f3c532;
+    background-color: #f3c532;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 90%;
   }
 }
