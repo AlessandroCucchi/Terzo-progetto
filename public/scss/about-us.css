@@ -66,7 +66,6 @@ body {
   margin-top: 2rem;
   font-size: 1.4rem;
   color: #000000;
-  text-shadow: 3px 3px 1px rgb(255, 255, 255);
   background-color: #e74040;
   border: 2px solid black;
   border-radius: 6px;
@@ -94,6 +93,8 @@ body {
   height: 180px;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 7px 7px 1px rgb(56, 56, 56);
 }
 .main .media-move .images-desc .images .party-emoji2 {
   display: inline-block;
