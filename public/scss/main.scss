@@ -8,33 +8,41 @@ body {
   flex-direction: column;
   font-family: "Source Sans Pro", sans-serif;
   background-color: #ff00956e;
-  padding: 0;
+  padding: 0 1rem;
   margin: 0;
   height: 100%;
 }
 
 .header {
-  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
   padding: 1rem;
   padding-bottom: 0;
   margin-top: 3%;
   margin-bottom: 0;
 
-  .tongue-logo {
-    height: 5.5rem; // ≈ 88px
-    width: 5.5rem;
-    aspect-ratio: 1;
-    margin: 0;
-    padding: 0;
+  .tongue-logo,
+  .about-us-img {
+    width: 20%;
+    max-width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
   }
 
   .title-wrapper {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .title {
       font-family: "Jolly Lodger";
@@ -43,14 +51,8 @@ body {
       margin: 0;
       font-size: 5rem;
       text-shadow: 5px 5px 1px rgb(255, 255, 255);
+      text-align: center;
     }
-  }
-
-  .about-us-img {
-    height: 85px; // ≈ 88p
-    aspect-ratio: 1;
-    margin: 0;
-    padding: 0;
   }
 }
 
@@ -60,6 +62,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
+
   .subtitle {
     margin: 1% 0 3% 0;
     padding: 0;
@@ -68,7 +71,7 @@ body {
 }
 
 ul {
-  margin: 0 5vw;
+  margin: 2rem;
   padding: 2rem;
   background-color: #6f00ff60;
   border-radius: 0.625rem;
@@ -76,17 +79,21 @@ ul {
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
   list-style-type: none;
-  align-items: center;
-  justify-content: center;
+  padding-top: 1rem;
+  margin: 0 auto 0 auto;
+  justify-items: center;
+  max-width: 1000px;
 
   li {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 25rem; // Larghezza mobile
 
     .news {
       display: flex;
@@ -113,22 +120,48 @@ ul {
       display: flex;
       justify-content: center;
       margin: 1rem;
-      width: 100%;
+
       .btn-visit-article {
         text-align: center;
         background-color: #f3c532;
-        color: #555555;
+        color: #000000;
         height: 2rem;
         border-radius: 0.375rem;
         font-weight: 600;
         font-size: 0.9rem;
         padding: 0 1rem;
         border: 2px solid rgb(46, 46, 46);
+
+        &:hover {
+          background-color: #c0303c60;
+          cursor: pointer;
+        }
       }
-      .btn-visit-article:hover {
-        background-color: #c0303c60;
-        cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+
+    li {
+      max-width: 30rem;
+
+      .news {
+        width: 90%;
       }
+    }
+  }
+
+  .header {
+    .tongue-logo,
+    .about-us-img {
+      width: 15%;
+    }
+
+    .title-wrapper .title {
+      font-size: 7rem;
     }
   }
 }
@@ -150,8 +183,9 @@ ul {
     font-weight: 600;
     cursor: pointer;
     border: 2px solid rgb(46, 46, 46);
-  }
-  .btn-load-more:hover {
-    background-color: #ff88007c;
+
+    &:hover {
+      background-color: #ff88007c;
+    }
   }
 }
