@@ -130,6 +130,17 @@ ul {
   cursor: pointer;
 }
 
+@media (max-width: 450px) {
+  .header .title-wrapper .title {
+    margin: 0 8px 0 8px;
+  }
+  .header .tongue-logo {
+    margin-left: -18px;
+  }
+  .header .about-us-img {
+    margin-right: -18px;
+  }
+}
 @media (min-width: 768px) {
   .list {
     grid-template-columns: repeat(2, 1fr);

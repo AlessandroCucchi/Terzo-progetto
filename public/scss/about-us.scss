@@ -137,6 +137,7 @@ body {
 }
 @media (max-width: 450px) {
   .header {
+    margin-bottom: 18px;
     .tongue-logo {
       height: 4rem;
       width: 4rem;
@@ -152,6 +153,19 @@ body {
         font-size: 1.2rem;
       }
     }
+    .media-move {
+      .images-desc {
+        .desc {
+          .desc-founders {
+            width: 200px;
+            margin: auto;
+            margin-top: 15px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
     .bottom {
       .desc2 {
         font-size: 1.2rem;
