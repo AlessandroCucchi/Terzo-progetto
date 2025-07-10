@@ -44,12 +44,11 @@ body {
   align-items: center;
 }
 .header .title-wrapper .title {
-  font-family: "Jolly Lodger";
-  font-weight: bold;
+  font-family: "Bangers";
   color: #1d1d1d;
   margin: 0;
-  font-size: 5rem;
-  text-shadow: 5px 5px 1px rgb(255, 255, 255);
+  font-size: 4.5rem;
+  text-shadow: 5px 5px 1px rgb(229, 77, 157);
   text-align: center;
 }
 

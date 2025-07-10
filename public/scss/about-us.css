@@ -31,12 +31,12 @@ body {
   transform: translateX(-50%);
 }
 .header .title-wrapper .title {
-  font-family: "Jolly Lodger";
+  font-family: "Bangers";
   font-weight: bold;
   color: #1d1d1d;
   margin: 0;
-  font-size: 5rem;
-  text-shadow: 5px 5px 1px rgb(255, 255, 255);
+  font-size: 4.5rem;
+  text-shadow: 5px 5px 1px rgb(229, 77, 157);
 }
 .header .about-us-img {
   height: 85px;
