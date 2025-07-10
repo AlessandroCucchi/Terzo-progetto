@@ -139,6 +139,9 @@ body {
     height: 4rem;
     width: 4rem;
   }
+  .main .top {
+    margin-top: -20px;
+  }
   .main .top .mission {
     font-size: 1.2rem;
   }
