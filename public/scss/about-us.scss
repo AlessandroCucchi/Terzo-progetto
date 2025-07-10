@@ -86,21 +86,13 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
 
-        .party-emoji1 {
-          font-size: 300%;
-        }
         .founders-img {
           height: 180px;
           object-fit: contain;
           border-radius: 10px;
           box-shadow: 7px 7px 1px rgb(56, 56, 56);
-        }
-        .party-emoji2 {
-          display: inline-block;
-          transform: scaleX(-1);
-          font-size: 300%;
         }
       }
 
@@ -115,10 +107,15 @@ body {
       }
     }
   }
-
-  .middle {
-    display: flex;
-    flex-direction: column;
+  .media-move {
+    .middle {
+      display: flex;
+      flex-direction: column;
+      .desc1 {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
   }
 }
 
@@ -138,8 +135,41 @@ body {
   width: 90%;
   padding: 7px;
 }
+@media (max-width: 450px) {
+  .header {
+    .tongue-logo {
+      height: 4rem;
+      width: 4rem;
+    }
+    .about-us-img {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+  .main {
+    .top {
+      .mission {
+        font-size: 1.2rem;
+      }
+    }
+    .bottom {
+      .desc2 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
 
 @media (min-width: 650px) {
+  .header {
+    margin-bottom: 20px;
+    .tongue-logo {
+      margin-left: 20px;
+    }
+    .about-us-img {
+      margin-right: 20px;
+    }
+  }
   .main {
     .top {
       .mission {
@@ -155,35 +185,44 @@ body {
           align-items: center;
           justify-content: space-around;
 
-          .party-emoji1 {
-            font-size: 400%;
-          }
-
           .founders-img {
             height: 300px;
           }
-
-          .party-emoji2 {
-            font-size: 400%;
-          }
+        }
+      }
+      .middle {
+        .desc1 {
+          margin-left: 40px;
+          margin-right: 40px;
         }
       }
     }
   }
 }
 @media (min-width: 900px) {
+  .header {
+    .tongue-logo {
+      margin-left: 40px;
+      width: 7rem;
+      height: 7rem;
+    }
+    .about-us-img {
+      margin-right: 40px;
+      width: 7rem;
+      height: 7rem;
+    }
+    .title-wrapper {
+      .title {
+        font-size: 5rem;
+      }
+    }
+  }
   .main {
     .media-move {
       .images-desc {
         .images {
-          .party-emoji1 {
-            font-size: 600%;
-          }
           .founders-img {
             height: 400px;
-          }
-          .party-emoji2 {
-            font-size: 600%;
           }
         }
       }
@@ -191,6 +230,23 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .header {
+    .tongue-logo {
+      margin-left: 60px;
+      width: 8rem;
+      height: 8rem;
+    }
+    .about-us-img {
+      margin-right: 60px;
+      width: 8rem;
+      height: 8rem;
+    }
+    .title-wrapper {
+      .title {
+        font-size: 6rem;
+      }
+    }
+  }
   .main {
     .top {
       .mission {
@@ -200,36 +256,39 @@ body {
 
     .media-move {
       flex-direction: row;
+
       .images-desc {
         align-items: center;
         justify-content: center;
+
         .desc {
           display: flex;
         }
-        .images {
-          .party-emoji1 {
-            font-size: 600%;
-          }
 
+        .images {
           .founders-img {
             height: 400px;
-          }
-
-          .party-emoji2 {
-            font-size: 600%;
+            margin-left: 48px;
           }
         }
       }
     }
+
     .middle {
       display: flex;
       justify-content: center;
       align-items: center;
+
       .desc1 {
         font-size: 1.4em;
         padding: 0 20px;
+        margin-right: 45px;
+        margin-left: 20px;
+        border-right: 2px solid black;
+        border: none;
       }
     }
+
     .bottom {
       .desc2 {
         padding: 1rem;
